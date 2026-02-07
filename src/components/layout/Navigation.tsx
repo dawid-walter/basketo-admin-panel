@@ -6,6 +6,9 @@ export const Navigation = () => {
   const navItems = [
     { path: '/dashboard', label: 'Dashboard' },
     { path: '/orders', label: 'Orders' },
+    { path: '/products', label: 'Products' },
+    { path: '/customers', label: 'Customers' },
+    { path: '/settings', label: 'Settings' },
   ];
 
   return (
