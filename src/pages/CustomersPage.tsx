@@ -60,7 +60,7 @@ export const CustomersPage = () => {
     if (orders >= 5) {
       return <Badge variant="success">Regular</Badge>;
     }
-    return <Badge variant="default">New</Badge>;
+    return <Badge variant="info">New</Badge>;
   };
 
   const totalCustomers = customers.length;
