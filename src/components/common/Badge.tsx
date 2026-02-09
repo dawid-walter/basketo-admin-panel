@@ -1,5 +1,5 @@
 import type { OrderStatus } from '../../types';
-import type { ReactNode } from 'react';
+import type { ReactNode, ReactElement } from 'react';
 
 // Generic Badge with variants
 interface GenericBadgeProps {
@@ -27,9 +27,9 @@ const variantColors = {
 };
 
 // Overloaded Badge component - accepts either status or children+variant
-export function Badge(props: OrderBadgeProps): JSX.Element;
-export function Badge(props: GenericBadgeProps): JSX.Element;
-export function Badge(props: OrderBadgeProps | GenericBadgeProps): JSX.Element {
+export function Badge(props: OrderBadgeProps): ReactElement;
+export function Badge(props: GenericBadgeProps): ReactElement;
+export function Badge(props: OrderBadgeProps | GenericBadgeProps): ReactElement {
   // Check if it's OrderBadgeProps
   if ('status' in props) {
     const config = statusConfig[props.status];
