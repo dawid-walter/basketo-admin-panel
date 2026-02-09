@@ -1,5 +1,5 @@
 import type { OrderStatus } from '../../types';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 // Generic Badge with variants
 interface GenericBadgeProps {
